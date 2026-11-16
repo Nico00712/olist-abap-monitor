@@ -1,2 +1,2 @@
 # olist-abap-monitor
-ABAP Cloud Olist Order anf Fulfillment Monitor
+ABAP Cloud Olist Order and Fulfillment Monitor
