@@ -39,7 +39,7 @@ Currently under development.
 
 This diagram documents the planned data model for the Olist Fulfillment Monitor.
 
-```mermaid
+
 erDiagram
     CUSTOMER {
         string customer_id PK
@@ -101,7 +101,15 @@ erDiagram
 
     CUSTOMER ||--o{ ORDER : places
     ORDER ||--o{ ORDER_ITEM : contains
-```
+    PRODUCT ||--o{ ORDER_ITEM : appears_in
+    SELLER ||--o{ ORDER_ITEM : sells
+    ORDER ||--o{ PAYMENT : has
+    ORDER ||--o{ REVIEW : receives
+    CATEGORY o|--o{ PRODUCT : categorizes
+    GEO o|--o{ CUSTOMER : locates
+    GEO o|--o{ SELLER : locates
+    ORDER ||--o{ FOLLOW_UP : has
+
 
 
 
