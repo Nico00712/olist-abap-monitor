@@ -57,7 +57,7 @@ CLASS ltc_import IMPLEMENTATION.
         DATA(tab) = cl_abap_char_utilities=>horizontal_tab.
         DATA(nl) = cl_abap_char_utilities=>newline.
 
-        DATA(payload) = |electronics { tab } Electronics { nl }| && |electronics { tab } Electronics|.
+        DATA(payload) = |electronics{ tab }Electronics{ nl }| && |electronics{ tab }Electronics|.
 
         TRY.
             zcl_ol_import=>upsert(
