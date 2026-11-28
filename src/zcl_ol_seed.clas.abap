@@ -410,13 +410,10 @@ CLASS zcl_ol_seed IMPLEMENTATION.
         MODIFY zol_rev FROM TABLE @reviews.
         total += sy-dbcnt.
 
-
-
         " COMMIT DATABASE CHANGES
         COMMIT WORK.
 
         out->write( |Committed { total } synthetic rows| ).
-
 
       CATCH cx_sy_open_sql_db INTO DATA(lx_db).
 

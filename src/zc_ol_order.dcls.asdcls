@@ -1,0 +1,5 @@
+@EndUserText.label: 'Olist Order Access Control'
+@MappingRole: true
+define role ZC_OL_ORDER {
+    grant select on ZC_OL_ORDER;                       
+}
